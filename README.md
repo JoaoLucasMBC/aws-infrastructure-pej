@@ -54,8 +54,8 @@ Todo o ambiente foi configurado utilizando **Terraform**, garantindo automação
 - Os sistemas de monitoramento (**Wazuh** e **Zabbix**) garantem a visibilidade do estado de cada máquina.
 - O banco de dados está isolado em uma subnet privada, aumentando a segurança dos dados armazenados.
 
-## Link do Vídeo Explicativo
-[Adicione aqui o link para o vídeo explicativo]
+## Vídeo Explicativo
+[![Vídeo Explicativo](https://img.youtube.com/vi/VXEU2e563yg/0.jpg)](https://youtu.be/VXEU2e563yg)
 
 ## Membros do Grupo
 - [Pedro Pertusi](https://github.com/PedroPertusi)
