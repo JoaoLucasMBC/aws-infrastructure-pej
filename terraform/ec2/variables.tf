@@ -25,3 +25,18 @@ variable "app_subnet_cidr" {
   default     = "10.0.1.0/24"
   description = "CIDR block of the application subnet"
 }
+
+variable "infra_key_name" {
+  default     = "pej-infra.pem"
+  description = "Key pair name for pej-infra SSH access"
+}
+
+variable "public_subnet_id" {
+  description = "Subnet ID for public subnet where pej-infra will be created"
+}
+
+variable "jump_key_name" {
+  default     = "pej-jump.pem"
+  description = "Key pair name for pej-jump SSH access"
+}
+
