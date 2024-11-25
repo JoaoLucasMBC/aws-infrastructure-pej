@@ -43,16 +43,28 @@ Foram configuradas 5 máquinas virtuais:
 - **Cloudflare** foi utilizado para adicionar uma camada extra de segurança, utilizando o domínio `abcplace.com.br`.
 - Subdomínios configurados para acesso seguro via HTTPS, com certificados SSL:
   - **Wazuh Dashboard:** [wazuh.abcplace.com.br](https://wazuh.abcplace.com.br)
+
+   ![wazuh](assets/wazuh.png)
+
   - **Zabbix Dashboard:** [zabbix.abcplace.com.br/zabbix](https://zabbix.abcplace.com.br/zabbix)
+
+   ![zabbix](assets/zabbix.png)
+
   - **API:** [api.abcplace.com.br](https://api.abcplace.com.br)
+
+   ![api](assets/api.png)
 
 ### Automação com Terraform
 Todo o ambiente foi configurado utilizando **Terraform**, garantindo automação e repetibilidade da infraestrutura. O repositório inclui os arquivos de configuração necessários para criar todos os recursos descritos. Basta ajustar as variáveis e executar os comandos do Terraform para reproduzir o ambiente. O código do Terraform está disponível no diretório **[terraform](./terraform)**.
+
+![terraform](assets/terraform.png)
 
 ### Segurança
 - A comunicação SSH entre as máquinas é permitida somente através do **Jump Server**.
 - Os sistemas de monitoramento (**Wazuh** e **Zabbix**) garantem a visibilidade do estado de cada máquina.
 - O banco de dados está isolado em uma subnet privada, aumentando a segurança dos dados armazenados.
+
+![vpn](assets/vpn.png)
 
 ## Vídeo Explicativo
 [![Vídeo Explicativo](https://img.youtube.com/vi/VXEU2e563yg/0.jpg)](https://youtu.be/VXEU2e563yg)

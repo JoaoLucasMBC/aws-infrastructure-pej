@@ -35,7 +35,7 @@ resource "aws_security_group" "pej_db" {
     from_port   = 3306
     to_port     = 3306
     protocol    = "tcp"
-    cidr_blocks = [var.public_subnet_id]
+    cidr_blocks = [var.public_subnet_ip]
   }
 
   ingress {
@@ -43,7 +43,7 @@ resource "aws_security_group" "pej_db" {
     from_port   = 10050
     to_port     = 10050
     protocol    = "tcp"
-    cidr_blocks = [var.public_subnet_id]
+    cidr_blocks = [var.public_subnet_ip]
   }
 
   egress {
@@ -168,7 +168,7 @@ resource "aws_security_group" "pej_jump" {
     from_port   = 10050
     to_port     = 10050
     protocol    = "tcp"
-    cidr_blocks = [var.public_subnet_id]
+    cidr_blocks = [var.public_subnet_ip]
   }
 
   ingress {
@@ -292,7 +292,7 @@ resource "aws_security_group" "pej_wazuh" {
     from_port   = 1514
     to_port     = 1514
     protocol    = "tcp"
-    cidr_blocks = [var.public_subnet_id, var.private_subnet_id]
+    cidr_blocks = [var.public_subnet_ip, var.private_subnet_ip]
   }
 
   ingress {
@@ -300,7 +300,7 @@ resource "aws_security_group" "pej_wazuh" {
     from_port   = 1515
     to_port     = 1515
     protocol    = "tcp"
-    cidr_blocks = [var.public_subnet_id, var.private_subnet_id]
+    cidr_blocks = [var.public_subnet_ip, var.private_subnet_ip]
   }
 
   ingress {

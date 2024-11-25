@@ -20,4 +20,6 @@ module "pej-ec2" {
   vpc_id = module.pej-vpc.vpc_id
   private_subnet_id = module.pej-vpc.private_subnet_id
   public_subnet_id = module.pej-vpc.public_subnet_id
+  public_subnet_ip = module.pej-vpc.public_subnet_ip
+  private_subnet_ip = module.pej-vpc.private_subnet_ip
 }

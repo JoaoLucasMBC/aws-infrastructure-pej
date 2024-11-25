@@ -35,6 +35,14 @@ variable "public_subnet_id" {
   description = "Subnet ID for public subnet where pej-infra will be created"
 }
 
+variable "public_subnet_ip" {
+  description = "Subnet IP for public subnet where pej-infra will be created"
+}
+
+variable "private_subnet_ip" {
+  description = "Subnet IP for private subnet where pej-infra will be created"
+}
+
 variable "jump_key_name" {
   default     = "pej-jump"
   description = "Key pair name for pej-jump SSH access"
