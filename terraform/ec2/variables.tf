@@ -27,7 +27,7 @@ variable "app_subnet_cidr" {
 }
 
 variable "infra_key_name" {
-  default     = "pej-infra.pem"
+  default     = "pej-infra"
   description = "Key pair name for pej-infra SSH access"
 }
 
@@ -36,7 +36,16 @@ variable "public_subnet_id" {
 }
 
 variable "jump_key_name" {
-  default     = "pej-jump.pem"
+  default     = "pej-jump"
   description = "Key pair name for pej-jump SSH access"
 }
 
+variable "zabbix_key_name" {
+  default     = "pej-zabbix"
+  description = "Key pair name for pej-zabbix SSH access"
+}
+
+variable "wazuh_key_name" {
+  default     = "pej-wazuh"
+  description = "Key pair name for pej-wazuh SSH access"
+}

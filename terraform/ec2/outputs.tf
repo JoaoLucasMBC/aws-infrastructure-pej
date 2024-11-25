@@ -42,3 +42,33 @@ output "pej_jump_security_group_id" {
   value = aws_security_group.pej_jump.id
   description = "ID of the pej-jump security group"
 }
+
+output "pej_zabbix_instance_id" {
+  value = aws_instance.pej_zabbix.id
+  description = "ID of the pej-zabbix EC2 instance"
+}
+
+output "pej_zabbix_public_ip" {
+  value = aws_instance.pej_zabbix.public_ip
+  description = "Public IP of the pej-zabbix EC2 instance"
+}
+
+output "pej_zabbix_security_group_id" {
+  value = aws_security_group.pej_zabbix.id
+  description = "ID of the pej-zabbix security group"
+}
+
+output "pej_wazuh_instance_id" {
+  value = aws_instance.pej_wazuh.id
+  description = "ID of the pej-wazuh EC2 instance"
+}
+
+output "pej_wazuh_public_ip" {
+  value = aws_instance.pej_wazuh.public_ip
+  description = "Public IP of the pej-wazuh EC2 instance"
+}
+
+output "pej_wazuh_security_group_id" {
+  value = aws_security_group.pej_wazuh.id
+  description = "ID of the pej-wazuh security group"
+}
