@@ -44,14 +44,15 @@ Foram configuradas 5 máquinas virtuais:
 - Subdomínios configurados para acesso seguro via HTTPS, com certificados SSL:
   - **Wazuh Dashboard:** [wazuh.abcplace.com.br](https://wazuh.abcplace.com.br)
   - **Zabbix Dashboard:** [zabbix.abcplace.com.br/zabbix](https://zabbix.abcplace.com.br/zabbix)
-  - **API:** [api.abcplace.com.br](https://api.abcplace.com.br)
+  - **API Docs:** [api.abcplace.com.br](https://api.abcplace.com.br/docs)
 
 ### Segurança
 - A comunicação SSH entre as máquinas é permitida somente através do **Jump Server**.
 - Os sistemas de monitoramento (**Wazuh** e **Zabbix**) garantem a visibilidade do estado de cada máquina.
+- Apesar de os Dashboards de monitoramente estarem expostos é necessário login para os mesmos. 
 - O banco de dados está isolado em uma subnet privada, aumentando a segurança dos dados armazenados.
 
-## Link do Vídeo Explicativo
+## Vídeo Explicativo
 [Adicione aqui o link para o vídeo explicativo]
 
 ## Membros do Grupo
